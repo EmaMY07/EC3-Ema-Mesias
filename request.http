@@ -23,7 +23,7 @@
 # Deben desplegar su aplicación en render
 # Al finalizar el examen entregarlo en el siguiente link: https://forms.office.com/r/RnzccdEfsN
 
-@server = 
+@server = https://ec3-emamesias.onrender.com
 @api = {{server}}/api/ec3
 
 ################ Categorias: ################
@@ -33,7 +33,7 @@ GET {{api}}/categorias
 POST {{api}}/categorias
 Content-Type: application/json
 
-{"nombre": "Instrumentos de Aire"}
+{"nombre": "Instrumentos de Cuerda"}
 ################ Instrumentos: ################
 ###
 GET {{api}}/instrumentos
@@ -41,8 +41,8 @@ GET {{api}}/instrumentos
 POST {{api}}/instrumentos
 Content-Type: application/json
 
-{"nombre": "Violin", "categoria": "http://localhost/api/ec3/categorias/1"}
+{"nombre": "Guitarra", "categoria": "http://localhost/api/ec3/categorias/1"}
 ###
-GET {{api}}/instrumentos/2/categoria
+GET {{api}}/instrumentos/1/categoria
 ###
 GET {{api}}/instrumentos?sort=nombre,desc
